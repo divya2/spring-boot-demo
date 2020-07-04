@@ -14,7 +14,7 @@ public class HealthController {
     private String appVersion;
 
     @GetMapping
-    @RequestMapping("/status")
+    @RequestMapping("/")
     public Map getStatus() {
         Map map = new HashMap<String, String>();
         map.put("app-version", appVersion);
